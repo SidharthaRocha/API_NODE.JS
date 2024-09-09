@@ -6,3 +6,8 @@ router.post('/register', authController.registerUser);
 // Rota para login de usuário 
 router.post('/login', authController.loginUser); 
 module.exports = router; // Exporta o roteador 
+
+// Rota para solicitar redefinição de senha 
+router.post('/request-password-reset', authController.requestPasswordReset); 
+// Rota para redefinir a senha 
+router.post('/reset-password', authController.resetPassword); 
